@@ -1,0 +1,75 @@
+.header {
+  height: 10vh;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #41b3a3;;
+
+  &__logo-wrapper{
+    padding: 10px;
+    width: 70px;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  &__title {
+    color: #ffffff;
+    font-size: 36px;
+
+    @media screen and (max-width: 768px){
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: 420px){
+      font-size: 20px;
+    }
+  }
+
+  &__search-input {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/1200px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 25px;
+    outline: 0;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+
+
+  }
+
+  &__icons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+
+    a {
+      font-size: 25px;
+      padding-left: 20px;
+      color: lightblue;
+
+      &:hover {
+        color: darkblue;
+      }
+    }
+  }
+}
+
+.active {
+  padding: 10px;
+  padding-left: 40px;
+  font-size: 18px;
+  width: 30vw;
+  background-position: 2% 50%;
+  cursor: auto;
+  transition: all 0.5s ease-in;
+
+}

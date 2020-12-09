@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #41b3a3;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+
+
+  &__img-wrapper{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+
+  &__details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+
+  &__link{
+   color: #B80000;
+   position: absolute;
+   bottom: 10px;
+  }
+
+  &__artist, &__track{
+    padding-top: 10px;
+    color: darkslategray;
+
+    img{
+      width: 15px;
+      margin-right: 8px;
+    }
+  }
+  
+  &__artist{
+    &:hover{
+      color: #B80000;
+    }
+  }
+
+}
